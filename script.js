@@ -126,6 +126,8 @@ optionsContainer.innerHTML = `You answered ${correctAnswers} out of ${totalQuest
 }
 
 function replayQuiz() {
+    document.getElementById('options').classList.remove('final-score');
+
     startQuiz();
 }
 

@@ -85,6 +85,8 @@ function loadQuestion() {
 }
 
 function checkAnswer(element, option) {
+    element.blur(); 
+
     const current = questions[currentQuestion];
 
     if (option === current.correct) {
@@ -103,6 +105,7 @@ function checkAnswer(element, option) {
 
     document.getElementById('next-btn').style.display = 'block';
 }
+
 
 function nextQuestion() {
     currentQuestion++;
